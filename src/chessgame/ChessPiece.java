@@ -12,4 +12,8 @@ package chessgame;
 public abstract class ChessPiece {
     
     
+    private String name;
+    private String color;
+            
+    
 }
