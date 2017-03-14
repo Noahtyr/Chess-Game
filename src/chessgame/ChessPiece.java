@@ -23,7 +23,19 @@ public abstract class ChessPiece {
         this.yPosition = yPosition;
     }
     
+    public boolean canMoveTo(int x, int y){
+        if(xPosition < 8 && yPosition < 8 && xPosition > 0 && yPosition > 0) { 
+            return true;
+    }  else {
+            return false;
+        }                 
+
+    }
+    }
+    
+    
+    
     
             
     
-}
+
