@@ -11,9 +11,10 @@ package chessgame;
  */
 public abstract class ChessPiece {
     
-    
     private String name;
     private String color;
+    private int xPosition;
+    private int yPosition;
             
     
 }
