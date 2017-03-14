@@ -12,7 +12,7 @@ package chessgame;
 public abstract class ChessPiece {
     
     private String name;
-    private String color;
+    private String color = "BLACK/WHITE";
     private int xPosition;
     private int yPosition;
             
