@@ -5,6 +5,9 @@
  */
 package chessgame;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  *
  * @author virk04
@@ -33,7 +36,7 @@ public abstract class ChessPiece {
     }
     
     public int positionToField(int x, int y){
-        return 0; // NOT DONE
+       Map<String, Integer> tiles = new HashMap<>();
         
     }
     
