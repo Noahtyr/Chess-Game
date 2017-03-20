@@ -5,9 +5,6 @@
  */
 package chessgame;
 
-import java.util.HashMap;
-import java.util.Map;
-
 /**
  *
  * @author virk04
@@ -36,7 +33,66 @@ public abstract class ChessPiece {
     }
     
     public int positionToField(int x, int y){
-       Map<String, Integer> tiles = new HashMap<>();
+        String tempString = null;
+        
+        switch(x) {
+            case 1: tempString += "A";
+            break;
+            
+            case 2: tempString += "B";
+            break;
+            
+            case 3: tempString += "C";
+            break;
+            
+            case 4: tempString += "D";
+            break;
+            
+            case 5: tempString += "E";
+            break;
+            
+            case 6: tempString += "F";
+            break;
+            
+            case 7: tempString += "G";
+            break;
+            
+            case 8: tempString += "H";
+                
+        }
+        switch(y){
+            case 1: tempString += "1";
+            break;
+            
+            case 2: tempString += "2";
+            break;
+            
+            case 3: tempString += "3";
+            break;
+            
+            case 4: tempString += "4";
+            break;
+            
+            case 5: tempString += "5";
+            break;
+            
+            case 6: tempString += "6";
+            break;
+            
+            case 7: tempString += "7";
+            break;
+            
+            case 8: tempString += "8";
+            break;
+            
+        }
+       
+        
+          
+//      //  int vert = 8;
+//        String hori = null;               
+//    
+     //   Map<String, Integer> tiles = new HashMap<>();
         
     }
     
