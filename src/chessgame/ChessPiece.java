@@ -32,7 +32,7 @@ public abstract class ChessPiece {
 
     }
     
-    public int positionToField(int x, int y){
+    public String positionToField(int x, int y){
         String tempString = null;
         
         switch(x) {
@@ -86,17 +86,32 @@ public abstract class ChessPiece {
             break;
             
         }
-       
-        
-          
-//      //  int vert = 8;
-//        String hori = null;               
-//    
-     //   Map<String, Integer> tiles = new HashMap<>();
-        
+
+      return tempString;  
     }
     
     public int possibleMoves(){
+        String[] moves = new String[22];
+        int counter = 0;
+               for (int i = 0; i < 8; i++) {
+                   for (int j = 0; j < 8; j++) {
+                       if(canMoveTo(i,j)== true){
+                           moves[counter] = positionToField(i,j);
+                           counter = counter +1;
+                       }
+                       
+                   }
+            
+        }
+              
+              
+            
+        
+              
+           
+        
+        
+        
         return 0; // All possible Tiles
     }
     
